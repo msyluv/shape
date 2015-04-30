@@ -28,14 +28,31 @@ public class ShapeApp {
 		point3.show(false);
 		point3.show();*/
 		
-		shape s=new shape();
-		s.draw();
+//		shape s=new shape();
+//		s.draw();
 
-		shape rect = new Rect();
-		shape circ = new Circ();
-
-		rect.draw();
-		circ.draw();
+//		shape rect = new Rect();
+//		shape circ = new Circ();
+//
+//		rect.draw();
+//		circ.draw();
+		
+		//Interface Test
+//		Drawable drawable = new Point();
+//		drawable.draw();
+		
+		
+		//Instanceof Test
+		Circ c = new Circ();
+		System.out.println(c instanceof Circ);		
+		System.out.println(c instanceof shape);
+		System.out.println(c instanceof Drawable);
+		
+		//Error
+//		System.out.println(c instance of Rect);
+		
+		shape s = c;
+		System.out.println(s instanceof Rect);
 
 	}
 }
