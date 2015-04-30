@@ -2,13 +2,13 @@ package shape;
 
 public class Circ extends shape implements Drawable{
 	
-	private double radius;
+	private int radius;
 	
-	public double getRadius() {
+	public int getRadius() {
 		return radius;
 	}
 
-	public void setRadius(double radius) {
+	public void setRadius(int radius) {
 		this.radius = radius;
 	}
 
@@ -20,5 +20,11 @@ public class Circ extends shape implements Drawable{
 	@Override
 	public double CalculateArea() {
 		return Math.PI*radius*radius;
+	}
+
+	@Override
+	public boolean visible() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }

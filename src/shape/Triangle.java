@@ -1,43 +1,36 @@
 package shape;
 
-public class Rect extends shape implements Drawable{
-	
-	private int width;
-	private int height;
-	
-	public int getWidth() {
-		return width;
-	}
+public class Triangle extends shape implements Drawable{
 
-	public void setWidth(int width) {
-		this.width = width;
-	}
+	private int height;
+	private int width;
 
 	public int getHeight() {
 		return height;
 	}
-
 	public void setHeight(int height) {
 		this.height = height;
 	}
-
+	public int getWidth() {
+		return width;
+	}
+	public void setWidth(int width) {
+		this.width = width;
+	}
+	
 	@Override
 	public void draw(){
-		System.out.println("사각형");
+		System.out.println("삼각형");
 	}
-
 	@Override
 	public double CalculateArea() {
 		// TODO Auto-generated method stub
-		return width * height;
+		return 0.5*height*width;
 	}
-
 	@Override
 	public boolean visible() {
 		// TODO Auto-generated method stub
 		return false;
 	}
-	
-	
 	
 }
